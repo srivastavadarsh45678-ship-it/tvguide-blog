@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stream TV Activation & Device Guide</title>
+  <meta name="description" content="Step-by-step activation & streaming guides for Prime Video, Netflix, Roku TV, Plex, Pluto TV. Mobile-friendly, ad-ready one page."/>
+  <style>
+    :root{
+      --bg:#0f1720; --card:#0b1220; --muted:#9fb0c8; --text:#e6f0f6; --accent:#2ea7ff; --panel:#0b1624;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;position:sticky;top:0;background:linear-gradient(180deg,rgba(2,6,23,0.9),transparent);z-index:50}
+    .logo{font-weight:700;letter-spacing:0.2px}
+    nav a{color:var(--muted);text-decoration:none;margin:0 8px;font-size:14px}
+    nav a:hover{color:var(--text)}
+    .hero{padding:44px 18px;border-radius:14px;background:linear-gradient(180deg, #071026, #071827);text-align:center;margin:8px 0}
+    .hero h1{font-size:28px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted)}
+    section{margin:18px 0;padding:8px 0}
+    .grid{display:grid;gap:14px}
+    @media(min-width:860px){.grid-3{grid-template-columns:repeat(3,1fr)} .grid-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:linear-gradient(180deg,var(--card),#041226);border:1px solid var(--glass);padding:16px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(0,0,0,0.45)}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted);font-size:14px}
+    ol,ul{margin:8px 0 0 18px;color:var(--text)}
+    .tag{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);margin-right:8px}
+    .cta{display:inline-block;background:var(--accent);color:#04202b;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .faq{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px}
+    footer{padding:20px 0;text-align:center;color:var(--muted);font-size:13px}
+    a.link{color:var(--accent);text-decoration:none}
+    .small{font-size:13px;color:var(--muted)}
+    .cols{display:grid;gap:10px}
+    @media(min-width:860px){.cols{grid-template-columns:2fr 1fr}}
+    /* simple form */
+    form input, form textarea{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+    form button{background:var(--accent);color:#04202b;padding:10px 12px;border-radius:8px;border:none;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">TV Guide Hub</div>
+      <nav aria-label="Main">
+        <a href="#activation">Activation</a>
+        <a href="#services">Services</a>
+        <a href="#connect">Connect</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <h1>Activate & Stream Your Favorite TV Easily</h1>
+        <p class="muted">Clear, step-by-step activation and streaming guides for Prime Video, Netflix, Roku TV, Plex, Pluto TV and more. Designed to be ad-compliant and user-friendly.</p>
+      </section>
+
+      <!-- Services: Separate blocks for each -->
+      <section id="services" class="section">
+        <h2 style="margin:6px 0 10px">Service Guides</h2>
+        <div class="grid grid-2 cols">
+          <div>
+            <!-- Prime Video -->
+            <div class="card" id="prime">
+              <h3>Amazon Prime Video — Activation & Tips</h3>
+              <p class="muted">Install the Prime Video app on smart TV devices (Smart TV, Fire TV, Roku) or cast from the Prime app/Chrome.</p>
+              <strong>Activation Steps</strong>
+              <ol>
+                <li>Open Prime Video on the TV/streaming stick and choose Sign In or Register.</li>
+                <li>An activation code may appear — note it.</li>
+                <li>On a phone or PC open <a class="link" href="https://primevideo.com/mytv" target="_blank" rel="noopener">primevideo.com/mytv</a> and enter the code.</li>
+                <li>Confirm on the website — the TV app will refresh and unlock content.</li>
+              </ol>
+              <strong style="display:block;margin-top:8px">Tips</strong>
+              <ul>
+                <li>If 4K content is expected, verify your subscription plan and HDMI/TV support for HDCP 2.2.</li>
+                <li>Use the official Prime Video app on the TV for stable playback; avoid screen mirroring for DRM-protected titles.</li>
+              </ul>
+              <div class="small" style="margin-top:10px"><strong>Troubleshooting:</strong> If the code fails, generate a new code from the TV app, ensure device time is correct, and try again.</div>
+            </div>
+
+            <!-- Netflix -->
+            <div class="card" id="netflix" style="margin-top:12px">
+              <h3>Netflix — Activation & Best Practices</h3>
+              <p class="muted">Netflix is best used via the native TV app or Chromecast for highest reliability and quality.</p>
+              <strong>Activation Steps</strong>
+              <ol>
+                <li>Open the Netflix app on your TV and choose Sign In → Activate Device.</li>
+                <li>Note the activation code displayed on TV.</li>
+                <li>On a browser go to <a class="link" href="https://www.netflix.com/activate" target="_blank" rel="noopener">netflix.com/activate</a> and enter the code while logged into your Netflix account.</li>
+                <li>Return to the TV app after confirmation to start watching.</li>
+              </ol>
+              <strong style="display:block;margin-top:8px">Tips</strong>
+              <ul>
+                <li>For 4K, ensure you have the correct plan and a 25 Mbps+ connection.</li>
+                <li>If mirroring causes a black screen, use the TV app or HDMI cable (DRM restrictions).</li>
+              </ul>
+              <div class="small" style="margin-top:10px"><strong>Troubleshooting:</strong> Clear app cache on the TV, reboot the device, and confirm account credentials are valid.</div>
+            </div>
+
+            <!-- Roku TV -->
+            <div class="card" id="rokutv" style="margin-top:12px">
+              <h3>Roku TV — Setup & Channel Activation</h3>
+              <p class="muted">Roku devices use channels (apps) that you add from the Roku Channel Store. Activation often requires linking the device to a Roku account.</p>
+              <strong>Setup & Activation</strong>
+              <ol>
+                <li>Plug the Roku stick/box into an HDMI port and power it on.</li>
+                <li>Follow on-screen setup: connect to Wi-Fi and create/login to your Roku account.</li>
+                <li>Open Streaming Channels → Search for the app (Netflix, Prime, Pluto, etc.) → Add channel.</li>
+                <li>Open the channel and sign in. Some channels display an activation code to enter at <a class="link" href="https://my.roku.com/link" target="_blank" rel="noopener">my.roku.com/link</a>.</li>
+              </ol>
+              <strong style="display:block;margin-top:8px">Tips</strong>
+              <ul>
+                <li>Use the Roku mobile app as a remote and for private listening.</li>
+                <li>For 4K streaming prefer Roku Ultra or wired Ethernet for stability.</li>
+              </ul>
+              <div class="small" style="margin-top:10px"><strong>Troubleshooting:</strong> If channels won't install, check storage and perform a system update from Settings → System.</div>
+            </div>
+          </div>
+
+          <div>
+            <!-- Plex -->
+            <div class="card" id="plex">
+              <h3>Plex TV — Setup & Use</h3>
+              <p class="muted">Plex organizes your personal media and also offers ad-supported free channels. Plex can be used on Smart TVs, streaming sticks, or via casting.</p>
+              <strong>Setup Steps</strong>
+              <ol>
+                <li>Install the Plex app on your TV or streaming player from the device app store.</li>
+                <li>Create a Plex account and sign in on the TV app.</li>
+                <li>If using a Plex Media Server (from your PC/NAS), install the server, add media libraries and sign in to link the server to your account.</li>
+                <li>From the TV app, navigate to your server or free Plex channels and play content.</li>
+              </ol>
+              <strong style="display:block;margin-top:8px">Tips</strong>
+              <ul>
+                <li>For home media use wired Ethernet on the server when possible for smooth streaming.</li>
+                <li>Plex also supports remote access — enable it in server settings and secure with a strong password.</li>
+              </ul>
+              <div class="small" style="margin-top:10px"><strong>Troubleshooting:</strong> If media doesn't appear, ensure the server is running, libraries are scanned, and firewall/router ports aren't blocking connections.</div>
+            </div>
+
+            <!-- Pluto TV -->
+            <div class="card" id="pluto" style="margin-top:12px">
+              <h3>Pluto TV — Free Streaming Guide</h3>
+              <p class="muted">Pluto TV provides free ad-supported live channels and on-demand shows. No subscription is required for most content.</p>
+              <strong>How to Use</strong>
+              <ol>
+                <li>Install Pluto TV from your device app store (Smart TV, Roku, Fire TV, Android TV).</li>
+                <li>Open the app — most content is available without signing in. Sign in if you want to save preferences.</li>
+                <li>Browse the channel guide or search for on-demand content and start playback.</li>
+              </ol>
+              <strong style="display:block;margin-top:8px">Tips</strong>
+              <ul>
+                <li>Ads are part of the experience — ensure you have a stable internet connection to avoid buffering.</li>
+                <li>Regional channel availability may vary.</li>
+              </ul>
+              <div class="small" style="margin-top:10px"><strong>Troubleshooting:</strong> If stream fails, try a different channel, clear app data, or reinstall the app.</div>
+            </div>
+
+            <!-- Quick links / summary panel -->
+            <div class="card" style="margin-top:12px">
+              <h3>Quick Links & Notes</h3>
+              <div class="tag">DRM</div><span class="small">Some apps restrict screen mirroring — prefer native TV apps, Chromecast or HDMI for protected content.</span>
+              <div style="margin-top:8px">
+                <div class="small"><strong>Casting tips:</strong> Keep phone/TV on same Wi-Fi and same band (2.4 vs 5 GHz). Restart devices if not discovered.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Connect (general methods) -->
+      <section id="connect" class="section">
+        <h2>How to Connect — Methods</h2>
+        <div class="grid grid-2" style="margin-top:12px">
+          <div class="card">
+            <h3>Chromecast / Cast</h3>
+            <ol>
+              <li>Ensure phone/laptop and Chromecast/TV are on the same Wi-Fi network.</li>
+              <li>In supported apps or Chrome tap the Cast icon and choose your device.</li>
+              <li>The phone becomes a remote; playback runs on the TV.</li>
+            </ol>
+            <div class="muted">Works well for YouTube and many Android apps.</div>
+          </div>
+
+          <div class="card">
+            <h3>AirPlay / Mirroring (Apple)</h3>
+            <ol>
+              <li>iPhone/iPad: open Control Center → Screen Mirroring → pick the TV.</li>
+              <li>Mac: use the AirPlay icon or Displays setting to mirror.</li>
+            </ol>
+            <div class="muted">Some DRM content may block mirroring — use in-app AirPlay when available.</div>
+          </div>
+
+          <div class="card">
+            <h3>HDMI (Wired)</h3>
+            <ol>
+              <li>Connect laptop/adapter to TV with HDMI cable or mobile adapter.</li>
+              <li>Set TV input to the HDMI port and use duplicate/extend display on laptop.</li>
+            </ol>
+            <div class="muted">Most reliable and best for high-quality 4K playback.</div>
+          </div>
+
+          <div class="card">
+            <h3>Miracast / Wireless Display (Android/Windows)</h3>
+            <ol>
+              <li>Enable Screen Mirroring on the TV or dongle.</li>
+              <li>From Android: Settings → Connected devices → Cast. From Windows: Press Win+K.</li>
+            </ol>
+            <div class="muted">Brand names vary (Smart View, Screen Share).</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="card" style="margin-top:12px">
+          <h3>Why isn't my activation code working?</h3>
+          <p class="muted">Codes expire after a short time — generate a new code in the TV app. Also ensure your TV clock and time zone are correct and that you are logged into the correct account on the activation website.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Do I need Wi-Fi to activate?</h3>
+          <p class="muted">Yes — activation and streaming require a working internet connection. Some apps can be installed without internet but will not stream content until online.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Is this site affiliated with Netflix/Amazon/Google?</h3>
+          <p class="muted">No. This site provides independent technical guidance. We are not affiliated with any streaming service.</p>
+        </div>
+      </section>
+
+      <!-- Contact / About -->
+      <section id="contact" class="section">
+        <div class="cols">
+          <div>
+            <h2>Contact & About</h2>
+            <p class="muted">TV Guide Hub helps users activate streaming apps and choose devices. For partnership or content corrections, use the contact form.</p>
+            <ul class="small" style="margin-top:8px">
+              <li><strong>Email:</strong> <a class="link" href="mailto:youremail@example.com">support@tvguide.in</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Send a Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Message sent (demo).'); this.reset();">
+              <input type="text" placeholder="Your name" required />
+              <input type="email" placeholder="Your email" required />
+              <textarea rows="4" placeholder="Message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy & Terms -->
+      <section id="privacy" class="section">
+        <h2>Privacy Policy (Short)</h2>
+        <p class="muted">Effective date: August 22, 2025. We do not sell personal information. We may use cookies and third-party analytics to improve the site. If you submit contact data we will use it to respond and will retain it only as necessary. For detailed legal requirements consult a professional.</p>
+      </section>
+
+      <section id="terms" class="section">
+        <h2>Terms & Conditions</h2>
+        <p class="muted">Information is provided for educational purposes only. We do not guarantee compatibility with every device. You must have valid accounts/subscriptions to access paid content on third-party services. We are not responsible for service outages or account issues with third-party providers.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>&copy; <span id="yr"></span> TV Guide Hub — All rights reserved.</div>
+      <div class="small" style="margin-top:8px">Built for general guidance. Ensure any ad creatives and landing pages comply with Google Ads policies before running campaigns.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    // smooth scroll for nav anchors
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const id = this.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
