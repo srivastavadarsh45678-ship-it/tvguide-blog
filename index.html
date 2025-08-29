@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Device Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #222;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover { background: #0056b3; }
+    ul {
+      margin: 15px 0;
+      padding-left: 18px;
+      font-size: 14px;
+    }
+    li { margin-bottom: 8px; }
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+    .call-box {
+      background: #f8fbff;
+      border: 1px solid #cce5ff;
+      border-radius: 6px;
+      padding: 14px;
+      margin: 20px 0;
+      font-size: 16px;
+      text-align: center;
+    }
+    .call-box a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .back-btn {
+      background: #6c757d;
+      margin-top: 15px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      main { margin: 15px; padding: 20px; }
+      header h1 { font-size: 18px; }
+      button { font-size: 15px; padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Register -->
+  <div id="registerPage">
+    <header>
+      <h1>Device Registration Portal</h1>
+    </header>
+    <main>
+      <h2>Register Your Device</h2>
+      <p>To start streaming, enter the activation code displayed on your TV or device.</p>
+      <input type="text" id="code" placeholder="Enter Code">
+      <button id="registerBtn">Register</button>
+
+      <h3>How to Find Your Code</h3>
+      <ul>
+        <li>Open the app on your Smart TV or device.</li>
+        <li>Navigate to “Register” or “Link Device”.</li>
+        <li>A unique activation code will appear on your screen.</li>
+        <li>Enter that code here and click Register.</li>
+      </ul>
+
+      <h3>Supported Devices</h3>
+      <ul>
+        <li><b>Fire TV / Stick:</b> Search & install app → open → sign in.</li>
+        <li><b>Roku:</b> Add channel → launch → enter code.</li>
+        <li><b>Apple TV:</b> Install from App Store → open → sign in.</li>
+        <li><b>Android TV:</b> Install from Google Play → open → sign in.</li>
+        <li><b>Smart TVs:</b> Pre-installed app or install from store.</li>
+      </ul>
+    </main>
+  </div>
+
+  <!-- Page 2: Success -->
+  <div id="successPage" style="display:none;">
+    <header>
+      <h1>Activation Successful</h1>
+    </header>
+    <main style="text-align:center;">
+      <h2 class="success">Code Redeemed Successfully</h2>
+      <p>Your device has been successfully linked with your account.</p>
+      <hr>
+      <h3>Phone Verification Required</h3>
+      <p>Please call our verification desk to complete your activation.</p>
+      <div class="call-box">
+        📞 <a href="tel:+15166545370">Call Now: +1 (516) 654-5370</a>
+      </div>
+      <button class="back-btn" onclick="goBack()">← Back</button>
+    </main>
+  </div>
+
+  <script>
+    const codeInput = document.getElementById('code');
+    const registerBtn = document.getElementById('registerBtn');
+
+    function showSuccess() {
+      document.getElementById('registerPage').style.display = 'none';
+      document.getElementById('successPage').style.display = 'block';
+    }
+    function goBack() {
+      document.getElementById('successPage').style.display = 'none';
+      document.getElementById('registerPage').style.display = 'block';
+      codeInput.focus();
+    }
+
+    // Button click
+    registerBtn.addEventListener('click', showSuccess);
+
+    // Enter key press
+    codeInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { showSuccess(); }
+    });
+  </script>
+
+</body>
+</html>
