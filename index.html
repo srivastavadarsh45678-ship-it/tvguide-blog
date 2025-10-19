@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TV Streaming Connect Guide | Prime Video · Netflix · Hulu · Plex · YouTube</title>
+  <meta name="description" content="Simple, ad‑policy‑friendly guidance to connect streaming apps to your TV: Prime Video, Netflix, Hulu, Plex, and YouTube. Clear steps, troubleshooting, and legal policies." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="TV Streaming Connect Guide" />
+  <meta property="og:description" content="Brief, clear instructions to connect popular streaming services to your TV, plus troubleshooting and policies." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230ea5e9'/><text x='50' y='58' font-size='60' text-anchor='middle' fill='white'>TV</text></svg>">  <style>
+    :root {--bg:#0b1220;--card:#0f172a;--muted:#94a3b8;--accent:#0ea5e9;--ring:rgba(14,165,233,.4);--ok:#22c55e;--warn:#eab308;--err:#ef4444;}
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;background:#0b1220;color:#e2e8f0}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid rgba(148,163,184,.1)}
+    .wrap{max-width:1024px;margin:0 auto;padding:16px}
+    .nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .brand .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#38bdf8,#0ea5e9);display:grid;place-items:center;font-weight:900}
+    .brand .logo span{color:white}
+    .menu{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#111827;border:1px solid rgba(148,163,184,.15)}
+    .btn:hover{border-color:rgba(148,163,184,.35)}
+    .cta{background:linear-gradient(135deg,#38bdf8,#0ea5e9);border:none;color:#001b2e;font-weight:700}
+    main{padding:32px 16px}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid rgba(148,163,184,.12);border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px 0}
+    .grid{display:grid;gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+    @media (max-width:900px){.grid.cols-2,.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
+    .kicker{color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+    .list{margin:8px 0 0 20px}
+    .note{font-size:.95rem;color:#cbd5e1}
+    .disclaimer{font-size:.9rem;color:#cbd5e1}
+    .status{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid rgba(148,163,184,.2)}
+    .status.ok{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.3)}
+    .status.warn{background:rgba(234,179,8,.08);border-color:rgba(234,179,8,.3)}
+    .status.err{background:rgba(239,68,68,.08);border-color:rgba(239,68,68,.3)}
+    .toc{display:flex;gap:8px;flex-wrap:wrap}
+    .toc a{border:1px solid rgba(148,163,184,.18);background:#0b1220;padding:8px 12px;border-radius:999px}
+    footer{padding:32px 16px;border-top:1px solid rgba(148,163,184,.1);background:#0a1020}
+    footer a{color:#93c5fd}
+    .small{font-size:.9rem;color:#cbd5e1}
+    .policy h2{margin-top:24px}
+    .search{display:flex;gap:8px}
+    input[type="search"]{flex:1;background:#0b1220;color:#e2e8f0;border:1px solid rgba(148,163,184,.2);padding:12px 14px;border-radius:12px;outline:none}
+    input[type="search"]:focus{border-color:var(--ring);box-shadow:0 0 0 6px var(--ring)}
+    .pill{display:inline-block;padding:4px 10px;border:1px solid rgba(148,163,184,.25);border-radius:999px;font-size:.8rem;color:#cbd5e1}
+    .hl{background:rgba(14,165,233,.12);border-bottom:2px solid var(--accent)}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#0b1220;border:1px solid rgba(148,163,184,.25);border-bottom-width:2px;border-radius:8px;padding:2px 6px}
+    .accordion details{border:1px solid rgba(148,163,184,.2);border-radius:12px;padding:12px;background:#0b1220}
+    .accordion summary{cursor:pointer;font-weight:600}
+    .cookie{position:fixed;z-index:60;inset:auto 16px 16px 16px;display:none}
+    .cookie .inner{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:14px;background:#0b1220;border:1px solid rgba(148,163,184,.25)}
+    .cookie button{padding:10px 14px;border-radius:10px;border:1px solid rgba(148,163,184,.25);background:#111827;color:#e2e8f0}
+    .cookie button.primary{background:linear-gradient(135deg,#38bdf8,#0ea5e9);border:none;color:#001b2e;font-weight:700}
+    .notice{padding:10px 12px;border:1px dashed rgba(148,163,184,.35);border-radius:12px}
+  </style>  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TV Streaming Connect Guide",
+    "url": "https://tvguide.site/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tvguide.site/?q={search_term}",
+      "query-input": "required name=search_term"
+    }
+  }
+  </script></head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo"><span>TV</span></div><span>Streaming Connect Guide</span></div>
+      <nav class="menu" aria-label="Primary">
+        <a class="btn" href="#guides">Guides</a>
+        <a class="btn" href="#troubleshoot">Troubleshoot</a>
+        <a class="btn" href="#faqs">FAQs</a>
+        <a class="btn" href="#policies">Policies</a>
+        <a class="btn cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="kicker">Quick start</p>
+        <h1>Connect your TV to popular streaming apps in minutes</h1>
+        <p class="note">Brief, step‑by‑step guidance for <span class="pill">Prime Video</span>, <span class="pill">Netflix</span>, <span class="pill">Hulu</span>, <span class="pill">Plex</span>, and <span class="pill">YouTube</span> — written to be clear and ad‑policy‑friendly.</p>
+        <div class="search" role="search">
+          <input id="search" type="search" placeholder="Search a device, app, or error code… (e.g., Fire TV, 0x803f8001)" aria-label="Search" />
+          <button class="btn" onclick="scrollToId('guides')">Browse Guides</button>
+        </div>
+        <p class="small" style="margin-top:8px">No affiliation with any brands mentioned. For informational purposes only.</p>
+      </div>
+      <div class="card">
+        <h3>Before you start</h3>
+        <ul class="list">
+          <li>Ensure your TV or streaming device (Smart TV, Fire TV, Roku, Apple TV, Chromecast) is connected to the Internet (Wi‑Fi or Ethernet).</li>
+          <li>Have your account email and password ready for each app.</li>
+          <li>Keep your device software and app versions updated.</li>
+          <li>Use an official app store (no third‑party APKs or modified apps).</li>
+        </ul>
+        <p class="status ok" style="margin-top:10px">Best practice: Use HDMI 2.0/2.1 cables for 4K HDR and reliable ARC/eARC for soundbars.</p>
+      </div>
+    </section><section id="guides" style="margin-top:32px">
+  <h2>Setup Guides</h2>
+  <div class="grid cols-2">
+    <!-- Prime Video -->
+    <article class="card" id="prime-video" aria-labelledby="prime-video-h">
+      <h3 id="prime-video-h">Prime Video — connect & sign in</h3>
+      <ol class="list">
+        <li>Open your TV’s app store and search for <span class="hl">Prime Video</span>. Select the official app by Amazon.</li>
+        <li>Install and open the app. Choose <strong>Sign in</strong>.</li>
+        <li>On another device, visit the official activation page shown on TV and enter the on‑screen code. (Never share codes with anyone.)</li>
+        <li>Choose your profile, set streaming quality (Auto/4K), and enable subtitles if needed.</li>
+      </ol>
+      <p class="note">Tip: If titles won’t play, check <em>Account & Settings → Your Devices</em> and deregister older devices, then sign in again.</p>
+    </article>
+
+    <!-- Netflix -->
+    <article class="card" id="netflix" aria-labelledby="netflix-h">
+      <h3 id="netflix-h">Netflix — connect & sign in</h3>
+      <ol class="list">
+        <li>Open the app store and install <span class="hl">Netflix</span> by Netflix, Inc.</li>
+        <li>Launch the app → <strong>Sign in</strong> with your email & password or scan the QR in‑app if available.</li>
+        <li>Select your profile. For 4K, ensure your plan supports Ultra HD and your device/HDMI input supports 4K @ 60 Hz.</li>
+        <li>Set <em>Audio & Subtitles</em> per title. Use <em>Test Patterns</em> (if available) to verify HDR.</li>
+      </ol>
+      <p class="note">Household settings are enforced by Netflix; traveling users may need to verify devices via email/SMS.</p>
+    </article>
+
+    <!-- Hulu -->
+    <article class="card" id="hulu" aria-labelledby="hulu-h">
+      <h3 id="hulu-h">Hulu — connect & sign in</h3>
+      <ol class="list">
+        <li>Search and install <span class="hl">Hulu</span> from the official app store.</li>
+        <li>Open → <strong>Log in</strong> → <em>Activate on a computer</em> or enter email & password directly.</li>
+        <li>For Live TV, set your Home network on a supported device and update it only as allowed by Hulu’s policy.</li>
+        <li>Enable <em>Captions & Audio</em> and adjust video quality to <em>Auto</em> for best results.</li>
+      </ol>
+      <p class="note">Location services may be required for local channels. VPNs can affect content availability.</p>
+    </article>
+
+    <!-- Plex -->
+    <article class="card" id="plex" aria-labelledby="plex-h">
+      <h3 id="plex-h">Plex — connect to your media server</h3>
+      <ol class="list">
+        <li>Install <span class="hl">Plex</span> from the app store.</li>
+        <li>Sign in with your Plex account. Your TV should auto‑discover servers on the same network.</li>
+        <li>If remote access is needed: Configure your server’s <em>Remote Access</em> (UPnP or manual port‑forwarding) and confirm status is <span class="status ok">Fully Accessible</span>.</li>
+        <li>Match libraries (Movies/TV/Music), enable hardware transcoding where available.</li>
+      </ol>
+      <p class="note">For best performance, store media on a wired server and use modern codecs (H.264/H.265) with adequate bitrate.</p>
+    </article>
+
+    <!-- YouTube -->
+    <article class="card" id="youtube" aria-labelledby="youtube-h">
+      <h3 id="youtube-h">YouTube — connect & pair</h3>
+      <ol class="list">
+        <li>Install <span class="hl">YouTube</span> by Google LLC.</li>
+        <li>Open → <strong>Sign in</strong> or use <em>Link with TV code</em> to pair the YouTube app on your phone.</li>
+        <li>Under <em>Settings → Remind me to take a break</em>, enable breaks and set restricted mode as needed.</li>
+        <li>For 4K, select titles with the <em>4K</em> badge and ensure your TV supports VP9/AV1.</li>
+      </ol>
+      <p class="note">If casting fails, restart the TV and phone, ensure both are on the same Wi‑Fi, and toggle the <em>Link with Wi‑Fi</em> setting.</p>
+    </article>
+
+    <!-- Universal steps -->
+    <article class="card" id="universal" aria-labelledby="universal-h">
+      <h3 id="universal-h">Universal steps (any service)</h3>
+      <ul class="list">
+        <li>Update TV firmware and the streaming app to the latest version.</li>
+        <li>Clear app cache/data (where available) and restart the TV/device.</li>
+        <li>Use a stable 5 GHz Wi‑Fi or wired Ethernet. Aim for 25+ Mbps for 4K.</li>
+        <li>Check date/time settings; incorrect time can break logins and DRM.</li>
+      </ul>
+      <div class="notice" style="margin-top:10px">Security: Only sign in on official apps/websites. Do not share one-time activation codes or passwords with anyone.</div>
+    </article>
+  </div>
+</section>
+
+<section id="troubleshoot" style="margin-top:32px">
+  <h2>Troubleshooting</h2>
+  <div class="grid cols-3">
+    <div class="card">
+      <h3>No signal / black screen</h3>
+      <ul class="list">
+        <li>Reseat HDMI cable; try a certified Ultra High Speed HDMI cable.</li>
+        <li>Switch to a different HDMI input; disable/enable HDR or ALLM.</li>
+        <li>Power cycle TV & device: unplug 60 seconds, then plug back.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>App won’t install / open</h3>
+      <ul class="list">
+        <li>Free storage space; update TV OS and app store.</li>
+        <li>Check region availability for the app.</li>
+        <li>Reinstall the app; sign in again.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Buffering / low quality</h3>
+      <ul class="list">
+        <li>Run a speed test; aim for 5+ Mbps (HD) or 25+ Mbps (4K).</li>
+        <li>Move closer to router or use Ethernet; reduce other network traffic.</li>
+        <li>Set streaming quality to <em>Auto</em>; avoid VPNs for best routing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="faqs" style="margin-top:32px">
+  <h2>FAQs</h2>
+  <div class="accordion grid cols-2">
+    <details>
+      <summary>Is this site affiliated with Prime Video, Netflix, Hulu, Plex, or YouTube?</summary>
+      <div class="disclaimer">No. This is an independent informational guide. All trademarks are the property of their respective owners.</div>
+    </details>
+    <details>
+      <summary>Can I use screenshots or logos on my own site?</summary>
+      <div class="disclaimer">Avoid unlicensed use of brand logos or copyrighted images. Use text‑only references to brand names and link to official resources.</div>
+    </details>
+    <details>
+      <summary>Why won’t a specific title play in 4K?</summary>
+      <div class="disclaimer">Check your plan (where applicable), HDMI port capability, TV support for HDR formats (HDR10/Dolby Vision), and bandwidth. Some titles aren’t available in 4K in all regions.</div>
+    </details>
+    <details>
+      <summary>Are activation codes safe to share?</summary>
+      <div class="disclaimer">Never share activation codes or passwords. Enter them only on the official website shown on your TV.</div>
+    </details>
+  </div>
+</section>
+
+<section id="policies" class="policy" style="margin-top:32px">
+  <h2>Site Policies (Ad‑Friendly)</h2>
+
+  <article class="card">
+    <h3>Advertising & Editorial Policy</h3>
+    <ul class="list">
+      <li>This website provides free how‑to guidance. We do not sell streaming accounts, devices, or unlocking services.</li>
+      <li>No misleading claims, no clickbait, and no unauthorized access instructions. We do not encourage policy violations.</li>
+      <li>Brand names are used nominatively for identification only. No endorsement or affiliation is implied.</li>
+      <li>Advertisements (if shown) are clearly separated from editorial content and labeled as “Ad”.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Privacy Policy</h3>
+    <p class="small">Last updated: <span id="pp-date"></span></p>
+    <p>We collect minimal information necessary to operate this site. We do not knowingly collect personal data from children under 13.</p>
+    <ul class="list">
+      <li><strong>Data we may process:</strong> basic analytics (page views, referrers), anonymized error logs.</li>
+      <li><strong>Cookies:</strong> used only for essential site features and measuring aggregate usage. You can opt out below.</li>
+      <li><strong>Third‑party links:</strong> Clicking external links takes you to their own privacy policies and terms.</li>
+      <li><strong>Contact:</strong> Email <a href="mailto:supported@tvguide.site">supported@tvguide.site</a> for privacy requests.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Terms of Use</h3>
+    <ul class="list">
+      <li>For informational purposes only; use at your own discretion.</li>
+      <li>No scraping, bulk copying, or resale of the content.</li>
+      <li>No instructions for bypassing DRM or violating service terms will be provided or permitted.</li>
+      <li>We may update content and policies without prior notice.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Disclaimer</h3>
+    <p class="disclaimer">All product names, logos, and brands are property of their respective owners. This site is not affiliated with or endorsed by Amazon, Netflix, Hulu, Plex, Google/YouTube, or any other company. Information is provided “as‑is” without warranties.</p>
+  </article>
+
+  <article class="card">
+    <h3>Cookie Preferences</h3>
+    <p class="small">You control whether analytics cookies are used.</p>
+    <div>
+      <button class="btn" onclick="setConsent(false)">Reject non‑essential cookies</button>
+      <button class="btn cta" onclick="setConsent(true)">Allow analytics cookies</button>
+    </div>
+  </article>
+</section>
+
+<section id="contact" style="margin-top:32px">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:supported@tvguide.site">supported@tvguide.site</a></p>
+    <p class="small">For account or billing issues with a streaming service, please contact the service provider directly via their official help pages.</p>
+  </div>
+</section>
+
+<section style="margin-top:32px">
+  <h2>Helpful external links</h2>
+  <div class="grid cols-2">
+    <div class="card small">
+      <h3>Official help centers</h3>
+      <ul class="list">
+        <li><a rel="nofollow noopener" target="_blank" href="https://www.primevideo.com/help">Prime Video Help</a></li>
+        <li><a rel="nofollow noopener" target="_blank" href="https://help.netflix.com/">Netflix Help Center</a></li>
+        <li><a rel="nofollow noopener" target="_blank" href="https://help.hulu.com/">Hulu Help</a></li>
+        <li><a rel="nofollow noopener" target="_blank" href="https://support.plex.tv/">Plex Support</a></li>
+        <li><a rel="nofollow noopener" target="_blank" href="https://support.google.com/youtube/">YouTube Help</a></li>
+      </ul>
+    </div>
+    <div class="card small">
+      <h3>Device guides</h3>
+      <ul class="list">
+        <li><a rel="nofollow noopener" target="_blank" href="https://www.amazon.com/firetv">Fire TV</a>, <a rel="nofollow noopener" target="_blank" href="https://www.roku.com/how-it-works">Roku</a>, <a rel="nofollow noopener" target="_blank" href="https://www.apple.com/apple-tv-4k/">Apple TV</a></li>
+        <li><a rel="nofollow noopener" target="_blank" href="https://tv.google/">Google TV / Chromecast</a>, <a rel="nofollow noopener" target="_blank" href="https://www.samsung.com/us/support/tv-audio-video/">Samsung TV</a></li>
+      </ul>
+      <p class="disclaimer">External links for convenience only. We are not responsible for their content.</p>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="wrap small">
+      <div class="grid cols-3">
+        <div>
+          <div class="brand" style="margin-bottom:8px"><div class="logo"><span>TV</span></div><span>Streaming Connect Guide</span></div>
+          <p>Clear steps to get your apps working on your TV, with ad‑policy‑friendly content and no personal data collection beyond essentials.</p>
+        </div>
+        <div>
+          <h3>Site</h3>
+          <ul class="list">
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#troubleshoot">Troubleshoot</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#policies">Policies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul class="list">
+            <li><a href="#policies">Privacy Policy</a></li>
+            <li><a href="#policies">Terms of Use</a></li>
+            <li><a href="#policies">Advertising Policy</a></li>
+            <li><a href="#policies">Cookie Preferences</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="small" style="margin-top:10px">© <span id="year"></span> tvguide.site</p>
+    </div>
+  </footer>  <!-- Simple cookie banner for consent -->  <div class="cookie" id="cookie">
+    <div class="inner">
+      <span>We use minimal cookies for essential features and aggregated analytics. You can change this anytime in <a href="#policies">Cookie Preferences</a>.</span>
+      <div>
+        <button onclick="setConsent(false)">Reject</button>
+        <button class="primary" onclick="setConsent(true)">Allow</button>
+      </div>
+    </div>
+  </div>  <script>
+    function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+    // Dates
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('pp-date').textContent = new Date().toISOString().slice(0,10);
+
+    // Lightweight on‑page search highlight
+    const searchEl = document.getElementById('search');
+    searchEl.addEventListener('input', () => {
+      const q = searchEl.value.trim().toLowerCase();
+      document.querySelectorAll('article.card').forEach(card => {
+        card.style.outline = q && card.textContent.toLowerCase().includes(q) ? '2px solid var(--accent)' : 'none'
+      });
+    });
+
+    // Cookie consent (no external analytics wired by default)
+    const CKEY='consent_analytics';
+    function showCookie(){document.getElementById('cookie').style.display='block'}
+    function hideCookie(){document.getElementById('cookie').style.display='none'}
+    function setConsent(val){localStorage.setItem(CKEY, val?'1':'0');hideCookie();/* Hook: if(val){ initAnalytics(); } */}
+    if(!localStorage.getItem(CKEY)){setTimeout(showCookie, 800)}
+  </script></body>
+</html>
