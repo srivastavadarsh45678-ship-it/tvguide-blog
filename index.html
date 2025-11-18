@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Device Registration & Setup Guide</title>
+  <meta name="description" content="Step-by-step guide to set up and activate Prime Video on smart TVs and streaming devices without any copyright issues.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f7faff, #e3edf9);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.6em;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 26px;
+      color: #2c3e50;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .instructions {
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+    .code-input input[type="text"] {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+    }
+    input::placeholder {
+      font-weight: 500;
+      color: #aaa;
+    }
+    .register-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .register-button button {
+      width: 60%;
+      padding: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .register-button button:hover {
+      background-color: #217dbb;
+      transform: scale(1.03);
+    }
+    .steps, .guide {
+      margin-top: 30px;
+    }
+    .steps h3, .guide h3 {
+      font-size: 18px;
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+    .steps ul, .guide ul {
+      padding-left: 20px;
+    }
+    .steps li, .guide li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+    .guide-section {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      border-left: 5px solid #3498db;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 22px;
+      }
+      .register-button button {
+        width: 80%;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .register-button button {
+        width: 90%;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Register Your Device</h1>
+    <br>
+    <p class="instructions">Easily link your smart TV or streaming device to your account</p>
+    <br>
+    <p class="instructions">Enter the code displayed on your device to start streaming</p>
+
+    <div class="code-input">
+      <input type="text" placeholder="Enter Code" />
+    </div>
+
+    <div class="register-button">
+      <button id="registerButton">Register</button>
+    </div>
+    <br>
+
+    <div class="steps">
+      <h3>Quick Registration Steps</h3>
+      <ul>
+        <li>Open the streaming app on your TV or device.</li>
+        <li>Select “Register on the website.”</li>
+        <li>Note the code displayed on your screen.</li>
+        <li>Visit the registration page and enter your code.</li>
+      </ul>
+    </div>
+
+    <div class="guide">
+      <h3>Setup Guide for Popular Devices</h3>
+      <div class="guide-section">
+        <strong>1. Fire TV / Stick</strong>
+        <ul>
+          <li>Open the app from the main menu.</li>
+          <li>If not installed, search and add it from the app store.</li>
+          <li>Sign in to start streaming.</li>
+        </ul>
+      </div>
+      <div class="guide-section">
+        <strong>2. Roku</strong>
+        <ul>
+          <li>Navigate to Streaming Channels → Search for the app.</li>
+          <li>Add and launch the channel.</li>
+          <li>Sign in or use the activation code method.</li>
+        </ul>
+      </div>
+      <div class="guide-section">
+        <strong>3. Apple TV</strong>
+        <ul>
+          <li>Search and install the app from the App Store.</li>
+          <li>Open it and log in or enter the displayed code online.</li>
+        </ul>
+      </div>
+      <div class="guide-section">
+        <strong>4. Android TV</strong>
+        <ul>
+          <li>Find and install the app from Google Play Store.</li>
+          <li>Launch and log in to your account.</li>
+        </ul>
+      </div>
+      <div class="guide-section">
+        <strong>5. Smart TVs</strong>
+        <ul>
+          <li>Check if the app is pre-installed or download it from the TV’s app store.</li>
+          <li>Open and log in to enjoy streaming.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("registerButton").addEventListener("click", function () {
+      window.location.href = "index2.html";
+    });
+  </script>
+</body>
+</html>
