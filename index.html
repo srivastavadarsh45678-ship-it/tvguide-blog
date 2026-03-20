@@ -115,19 +115,35 @@ z-index:9999;
   background:white;
   padding:25px;
   border-radius:10px;
-  width:300px;
+  width:320px;
   text-align:center;
   box-shadow:0 4px 15px rgba(0,0,0,0.3);
   ">
   
-    <h3 style="color:#1e3a8a;">Need Help?</h3>
-    <p>Immediately call to our customer support for any queries</p>
-    
+    <h3 style="color:#1e3a8a;">Need Immediate Help?</h3>
+    <p>Contact our support team for quick assistance</p>
+
+    <!-- Call Button -->
+    <a href="tel:+18634315031" style="
+    display:inline-block;
+    margin-top:10px;
+    background:#22c55e;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    ">
+    📞 Call Now
+    </a>
+
+    <br><br>
+
     <button onclick="closePopup()" style="
     background:#ef4444;
     color:white;
     border:none;
-    padding:8px 15px;
+    padding:6px 12px;
     border-radius:5px;
     cursor:pointer;
     ">Close</button>
@@ -144,6 +160,5 @@ function closePopup() {
   document.getElementById("popupModal").style.display = "none";
 }
 </script>
-
 </body>
   </html>
